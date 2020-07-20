@@ -5,8 +5,17 @@
 }
 
 .chat-message-wrapper.sent {
-  flex-direction: row-reverse;
+  display: flex;
+  flex-direction: row;
   justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.chat-message-wrapper.received {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .chat-message {
@@ -24,9 +33,16 @@
   opacity: 0.6;
 }
 
-.chat-message-wrapper.sent .chat-message {
-  color: #fff;
+.chat-message-wrapper.sent.chat-message {
+  color: white;
   background: linear-gradient(180deg, #2392fd, #1185f7);
+  align-self: flex-start;
+}
+
+.chat-message-wrapper.received.chat-message {
+  color: black;
+  background: linear-gradient(180deg, #c6d1db, #d2d8df);
+  align-self: flex-end;
 }
 
 .tip {
