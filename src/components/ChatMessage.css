@@ -7,7 +7,7 @@
 .chat-message-wrapper.sent {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: flex-start;
 }
 
@@ -15,16 +15,16 @@
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
-  align-items: flex-end;
 }
 
 .chat-message {
+  max-width: 80%;
   position: relative;
   border-radius: 14px;
   padding: 10px 12px;
   background: #e9e9eb;
-  font-size: 22px;
-  margin: 0 10px;
+  font-size: 15px;
+  margin: 10 10px;
 }
 
 .author {
@@ -33,16 +33,14 @@
   opacity: 0.6;
 }
 
-.chat-message-wrapper.sent.chat-message {
+.chat-message-wrapper.sent .chat-message {
   color: white;
   background: linear-gradient(180deg, #2392fd, #1185f7);
-  align-self: flex-start;
 }
 
-.chat-message-wrapper.received.chat-message {
+.chat-message-wrapper.received .chat-message {
   color: black;
   background: linear-gradient(180deg, #c6d1db, #d2d8df);
-  align-self: flex-end;
 }
 
 .tip {
