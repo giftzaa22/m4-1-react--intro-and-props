@@ -25,6 +25,7 @@ function ChatStream(props) {
         return (
           <ChatMessage
             user={message.user}
+            timestamp={message.timestamp}
             body={message.body}
             messageType={messageType}
           />
